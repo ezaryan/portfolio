@@ -988,18 +988,19 @@ useEffect(() => {
                 <ul className="mt-4 space-y-4 text-sm leading-7 text-neutral-400">
                   <li className="flex gap-3">
                     <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
-                    Evaluated the{" "}
-                    <a
-                      href="https://inamigosfoundation.org.in/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline decoration-white/30 underline-offset-4 transition hover:text-white"
-                    >
-                      InAmigos Foundation website
-                    </a>{" "}
-                    and identified
-                    opportunities to improve navigation, content structure,
-                    accessibility, and user experience.
+                    <span className="min-w-0">
+                      Evaluated the{" "}
+                      <a
+                        href="https://inamigosfoundation.org.in/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline decoration-white/30 underline-offset-4 transition hover:text-white"
+                      >
+                        InAmigos Foundation website
+                      </a>{" "}
+                      and identified opportunities to improve navigation,
+                      content structure, accessibility, and user experience.
+                    </span>
                   </li>
 
                   <li className="flex gap-3">
