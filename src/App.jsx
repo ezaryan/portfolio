@@ -588,7 +588,7 @@ useEffect(() => {
 
               <motion.a
               data-cursor
-                href="/resume.pdf"
+                href="/aryan_pagar_resume.pdf"
                 download
                 whileHover={{
                   scale: 1.05,
@@ -724,9 +724,9 @@ useEffect(() => {
           description: "Software & full-stack projects",
         },
         {
-          value: "1",
-          label: "Internship",
-          description: "Cybersecurity experience",
+          value: "2",
+          label: "Internships",
+          description: "Web development & cybersecurity",
         },
         {
           value: "6+",
@@ -852,13 +852,14 @@ useEffect(() => {
         className="border-t border-white/5 px-6 py-32 lg:px-8"
       >
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8"
-        >
+        <div className="grid gap-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
+            className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8"
+          >
           {/* Top line */}
           <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
             <div>
@@ -936,7 +937,122 @@ useEffect(() => {
               )
             )}
           </div>
-        </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
+            className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8"
+          >
+            <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+              <div>
+                <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">
+                  03 / Experience
+                </p>
+
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+                  AI Web Development Intern
+                </h3>
+
+                <p className="mt-2 text-sm text-neutral-400">
+                  InAmigos Foundation
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2 text-sm text-neutral-500">
+                <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                Internship
+              </div>
+            </div>
+
+            <div className="h-px bg-white/10" />
+
+            <div className="mt-8 grid gap-8 md:grid-cols-[180px_1fr]">
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-neutral-600">
+                  Role
+                </p>
+
+                <p className="mt-2 text-sm text-neutral-300">
+                  AI Web Development Intern
+                </p>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-neutral-600">
+                  What I worked on
+                </p>
+
+                <ul className="mt-4 space-y-4 text-sm leading-7 text-neutral-400">
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    Evaluated the{" "}
+                    <a
+                      href="https://inamigosfoundation.org.in/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline decoration-white/30 underline-offset-4 transition hover:text-white"
+                    >
+                      InAmigos Foundation website
+                    </a>{" "}
+                    and identified
+                    opportunities to improve navigation, content structure,
+                    accessibility, and user experience.
+                  </li>
+
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    Designed NGO website feature concepts for donations,
+                    volunteer registration, campaigns, testimonials, and
+                    highlighting organizational impact.
+                  </li>
+
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    Created a business webpage with structured content,
+                    thoughtful visual presentation, and user-friendly design.
+                  </li>
+
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    Developed a personal portfolio website to showcase
+                    projects, technical skills, certifications, and education.
+                  </li>
+
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    Strengthened practical skills in website development,
+                    design thinking, and creating user-focused digital
+                    experiences.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-2 border-t border-white/10 pt-6">
+              {[
+                "AI-Assisted Web Development",
+                "UI/UX Design",
+                "Website Analysis",
+                "Responsive Web Design",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "GitHub",
+                "Vercel",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs text-neutral-500"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
 
       </section>
 
